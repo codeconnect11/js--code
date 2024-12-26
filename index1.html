@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Table Row</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 60%;
-            margin: 20px auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .action-buttons button {
-            margin-right: 5px;
-        }
-    </style>
+    <title>user bio data </title>
+    <link rel="stylesheet" href="assests1/css.2/style2.css">
 </head>
 <body>
+   
     <form id="userForm" onsubmit="addRow(event)">
+        <div class="loginform">
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size:xx-large; text-align: center;">Login Form</h1>
         <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname">
+        <input type="text" id="fname" name="fname" style="border-radius: 9px;">
         <span id="fnameError" class="error"></span><br><br>
 
         <label for="age">Age:</label><br>
-        <input type="text" id="age" name="age">
+        <input type="text" id="age" name="age" style="border-radius: 9px;">
         <span id="ageError" class="error"></span><br><br>
 
-        <input type="submit" value="Add">
-    </form>
+        <label for=" phoneno">  phoneno:</label><br>
+        <input type="text" id="phoneno" name="phoneno" style="border-radius: 9px;">
+        <span id="  phonenoError" class="error"></span><br><br>
 
-    <h2 style="text-align:center;">User Data</h2>
+        <label for=" Email"> Email:</label><br>
+        <input type="text" id="Email" name="Email" style="border-radius: 9px;">
+        <span id=" EmailError" class="error"></span><br><br>
+
+        <label for="Education">  Education:</label><br>
+        <input type="text" id="Education" name="Education" style="border-radius: 9px;">
+        <span id=" EducationError" class="error"></span><br><br>
+
+        <input type="submit" value=" submit">
+    </form>
+</div>
+
+    <h2 style="text-align:center; font-size: x-large;">User Data</h2>
     <table id="userTable">
         <thead>
             <tr>
                 <th>First Name</th>
                 <th>Age</th>
+                <th> phone no.</th>
+                <th> Email</th>
+                <th> Education </th>
                 <th>Actions</th>
+                 
             </tr>
         </thead>
         <tbody>
@@ -50,6 +53,6 @@
         </tbody>
     </table>
 
-    <script src="../assets/js/first.js"></script>
+    <script src="assests1/js/sec.js"></script>
 </body>
 </html>
