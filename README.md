@@ -1,2 +1,2 @@
 code for all
-A code repo for java script 
+this is my projects code for all 
